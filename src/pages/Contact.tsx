@@ -7,7 +7,7 @@ interface ContactData {
   message: string
 }
 
-export const Contact=() =>{
+export const Contact = () => {
 
   const [form, setForm] = useState<ContactData>({
     name: "",
@@ -38,7 +38,7 @@ export const Contact=() =>{
 
     localStorage.setItem("messages", JSON.stringify(messages))
 
-    setShow(true)
+    setShow(true);
 
     setTimeout(() => {
       setShow(false)
@@ -57,7 +57,7 @@ export const Contact=() =>{
 
     <div className="contact">
 
-      {/* SUCCESS MESSAGE */}
+{/* Success Message */}
 
       {show && (
         <div className="successMessage">
@@ -67,7 +67,7 @@ export const Contact=() =>{
 
       <div className="contact-container">
 
-        {/* CONTACT FORM */}
+{ /*Contact form*/ }
 
         <div className="contact-form">
 
@@ -80,32 +80,28 @@ export const Contact=() =>{
               placeholder="Name"
               value={form.name}
               onChange={handleChange}
-              required
-            />
+              required />
 
             <input
               name="email"
               placeholder="Email"
               value={form.email}
               onChange={handleChange}
-              required
-            />
+              required />
 
             <input
               name="contact"
               placeholder="Contact"
               value={form.contact}
               onChange={handleChange}
-              required
-            />
+              required/>
 
             <textarea
               name="message"
               placeholder="Message"
               value={form.message}
               onChange={handleChange}
-              required
-            />
+              required />
 
             <button>Send Message</button>
 
@@ -120,17 +116,11 @@ export const Contact=() =>{
 
           <h2>Join us in my Mail</h2>
 
-          <p>
-            If you want to collaborate or discuss any project,
-            feel free to send me an email.
-          </p>
+          <p> If you want to collaborate or discuss any project,
+            feel free to send me an email.</p>
 
-          <a
-            href="mailto:muthukumar220769@gmail.com?subject=Portfolio Contact&body=Hello Muthukumar,"
-            className="email-btn"
-          >
-            Send Email
-          </a>
+          <a href="mailto:muthukumar220769@gmail.com?subject=Portfolio Contact&body=Hello Muthukumar,"
+            className="email-btn">Send Email</a>
 
         </div>
 

@@ -8,7 +8,7 @@ export const Navbar = () => {
   const [open, setOpen] = useState(false);
 
 
-  
+
 
   return (
     <>
@@ -18,7 +18,6 @@ export const Navbar = () => {
           <Link to="/">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/projects">Projects</Link>
-          <Link to="/project/:id">Project Details</Link>
           <Link to="/contact">Contact</Link>
         </div>
         <button className="mobilebtn" onClick={() => setOpen(!open)}>☰</button>
